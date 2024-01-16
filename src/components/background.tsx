@@ -3,5 +3,7 @@ export default function Background({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="bg-zinc-200 min-h-screen">{children}</div>;
+  return (
+    <div className="flex flex-col bg-zinc-200 min-h-screen">{children}</div>
+  );
 }
