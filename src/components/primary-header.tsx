@@ -19,7 +19,7 @@ export default function PrimaryHeader() {
           <Input
             type="search"
             placeholder="Search jobs"
-            className="mt-2 w-1/3 mx-auto"
+            className="w-1/3 mx-auto -mt-4"
           />
         </header>
       </div>
