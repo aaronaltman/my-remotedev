@@ -3,7 +3,7 @@ import Container from "./container";
 import Sidebar from "./sidebar";
 import SingleResult from "./single-result";
 
-export default function TheMain() {
+export default async function TheMain() {
   return (
     <main>
       <Container>
