@@ -1,8 +1,7 @@
 import SearchInput from "./search-input";
-import { Input } from "./ui/input";
 import { BookmarkFilledIcon } from "@radix-ui/react-icons";
 
-export default function PrimaryHeader() {
+export default function PrimaryHeader({ setSearchJobs, searchJobs }) {
   return (
     <section id="HeaderSection">
       <div className="bg-[url('https://bytegrad.com/course-assets/js/2/pattern.svg')] bg-cover bg-center bg-blue-600 pt-6 pb-20">
@@ -18,7 +17,7 @@ export default function PrimaryHeader() {
               Bookmarks <BookmarkFilledIcon />
             </p>
           </div>
-          <SearchInput />
+          <SearchInput searchJobs={searchJobs} setSearchJobs={setSearchJobs} />
         </header>
       </div>
     </section>
