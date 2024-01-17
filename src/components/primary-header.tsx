@@ -1,3 +1,4 @@
+import SearchInput from "./search-input";
 import { Input } from "./ui/input";
 import { BookmarkFilledIcon } from "@radix-ui/react-icons";
 
@@ -12,15 +13,12 @@ export default function PrimaryHeader() {
               alt="Rmt|DEV"
               className="w-24 h-24"
             />
+            <p>|</p>
             <p className="flex gap-2 justify-center items-center text-sm">
               Bookmarks <BookmarkFilledIcon />
             </p>
           </div>
-          <Input
-            type="search"
-            placeholder="Search jobs"
-            className="w-1/3 mx-auto -mt-4"
-          />
+          <SearchInput />
         </header>
       </div>
     </section>
